@@ -14,7 +14,7 @@ const DeleteBook = () => {
   const handleDeleteBook = () => {
     setLoading(true);
     axios
-        .delete(`https://epicbooks-mern-abhiram-n.onrender.com/${id}`)
+        .delete(`https://epicbooks-mern-abhiram-n.onrender.com/books/${id}`)
         .then(()=>{
           setLoading(false);
           enqueueSnackbar("Book Deleted successfully", { variant: 'success' });
